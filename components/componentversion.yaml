@@ -1,0 +1,18 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: ComponentVersion
+metadata:
+  name: podinfo
+  namespace: ocm-system
+spec:
+  interval: 10m0s
+  name: github.com/acme/podinfo
+  version: v1.0.0
+  repository:
+    url: ghcr.io/$GITHUB_USER
+    secretRef:
+      name: creds
+  verify:
+  - name: phoban01
+    publicKey:
+      secretRef:
+        name: alice-publickey
