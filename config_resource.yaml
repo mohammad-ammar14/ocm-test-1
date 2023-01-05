@@ -1,0 +1,7 @@
+name: config
+version: v1.0.0
+type: localBlob
+input:
+  type: file
+  path: ./config.yaml
+  compress: true

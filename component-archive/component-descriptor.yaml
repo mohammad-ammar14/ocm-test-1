@@ -1,0 +1,55 @@
+component:
+  componentReferences: []
+  name: github.com/acme/podinfo
+  provider: acme
+  repositoryContexts: []
+  resources:
+  - access:
+      imageReference: ghcr.io/stefanprodan/podinfo:6.2.0
+      type: ociArtefact
+    digest:
+      hashAlgorithm: sha256
+      normalisationAlgorithm: ociArtifactDigest/v1
+      value: fbc7e3038e8f8235d4d0c04484ee5d3019eb941a9643b733e60c18443d228f3a
+    name: image
+    relation: external
+    type: ociImage
+    version: v6.2.0
+  - access:
+      localReference: sha256.39ae35579de021a4dec7697d5e58ab75f3c5f160c4435f6ac0321e04e4bc0e32
+      mediaType: application/gzip
+      type: localBlob
+    digest:
+      hashAlgorithm: sha256
+      normalisationAlgorithm: genericBlobDigest/v1
+      value: 39ae35579de021a4dec7697d5e58ab75f3c5f160c4435f6ac0321e04e4bc0e32
+    name: deployment
+    relation: local
+    type: localBlob
+    version: v1.0.0
+  - access:
+      localReference: sha256.e2e48344b234e068c2d8fcc5e2fa162d488ffb4127d757f9a7fded8ca8b15fd6
+      mediaType: application/gzip
+      type: localBlob
+    digest:
+      hashAlgorithm: sha256
+      normalisationAlgorithm: genericBlobDigest/v1
+      value: e2e48344b234e068c2d8fcc5e2fa162d488ffb4127d757f9a7fded8ca8b15fd6
+    name: config
+    relation: local
+    type: localBlob
+    version: v1.0.0
+  sources: []
+  version: v1.0.0
+meta:
+  schemaVersion: v2
+signatures:
+- digest:
+    hashAlgorithm: sha256
+    normalisationAlgorithm: jsonNormalisation/v1
+    value: 7bc8688744c1cf94cf7b30f4822a29780ba0554cad1c302a48275ca0f48aea1a
+  name: alice
+  signature:
+    algorithm: RSASSA-PKCS1-V1_5
+    mediaType: application/vnd.ocm.signature.rsa
+    value: 4e835f1c0ea73fc247cda0cca5804fc084e725a646412d59b2dfe3a0e76046603c052a2c656e3aecf568e7315d44dc975dc2eb142885c83898005b10dcacfa107c47a24b777d9582f830f71343431006e26af925fb5ae52f91546ff53d70027a7109056a7d9f59682a5614dde1105446ba318116fff7fa11d772f39729491a3879820252bc53c6a74a3a0476b63a6dc71fe21c0e390fa7a88e96387b2f9a07189516728e9764a2fd2f0720285f0430cdce077b659173add9ec3217f9be640108e87cf7cb2790ed70e22ff036bd71c3e555c20fb7cb8c9abe1ec4937226246710b08c5d5c8d807797d1178002d333c3e6129342664c53f63044b2332a3b731a42
