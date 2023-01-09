@@ -8,7 +8,7 @@ spec:
   name: github.com/acme/podinfo
   version: v1.0.0
   repository:
-    url: ghcr.io/$GITHUB_USER
+    url: https://github.com/mohammad-ammar14/ocm-test-1
     secretRef:
       name: creds
   verify:
