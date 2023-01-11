@@ -11,8 +11,8 @@ spec:
     url: ghcr.io/GITHUB_USER
     secretRef:
       name: creds
-#  verify:
-#  - name: phoban01
-#    publicKey:
-#      secretRef:
-#        name: alice-publickey
+  verify:
+  - name: phoban01
+    publicKey:
+      secretRef:
+        name: alice-publickey
