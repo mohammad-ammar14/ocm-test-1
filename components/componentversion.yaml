@@ -8,11 +8,11 @@ spec:
   name: github.com/acme/podinfo
   version: v1.0.0
   repository:
-    url: https://github.com/mohammad-ammar14/ocm-test-1
+    url: ghcr.io/mohammad-ammar14
     secretRef:
       name: creds
-  verify:
-  - name: phoban01
-    publicKey:
-      secretRef:
-        name: alice-publickey
+#  verify:
+#  - name: phoban01
+#    publicKey:
+#      secretRef:
+#        name: alice-publickey
