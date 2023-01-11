@@ -6,9 +6,9 @@ metadata:
 spec:
   interval: 10m0s
   name: github.com/acme/podinfo
-  version: v1.0.0
+  version: v1.0.1
   repository:
-    url: ghcr.io/mohammad-ammar14
+    url: ghcr.io/GITHUB_USER
     secretRef:
       name: creds
 #  verify:
