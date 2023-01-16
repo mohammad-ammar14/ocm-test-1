@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
+metadata:
+  name: podinfo
+  namespace: ocm-system
+spec:
+  interval: 1m0s
+  url: oci://registry.ocm-system.svc.cluster.local/snapshots/podinfo-deployment-localized
+  insecure: true
+  ref:
+    tag: latest
