@@ -2,7 +2,7 @@ apiVersion: delivery.ocm.software/v1alpha1
 kind: ComponentVersion
 metadata:
   name: podinfo
-  namespace: flux-system
+  namespace: ocm-system
 spec:
   interval: 10m0s
   name: github.com/acme/podinfo
