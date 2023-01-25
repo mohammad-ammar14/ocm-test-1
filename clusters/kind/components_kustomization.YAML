@@ -8,6 +8,6 @@ spec:
   prune: true
   targetNamespace: default
   sourceRef:
-    kind: OCIRepository
+    kind: GitRepository
     name: podinfo
   path: ./components
